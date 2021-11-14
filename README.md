@@ -2,7 +2,7 @@
 
 Search music from JioSaavn.
 
-<img src="public\video\showcase.gif">
+<img src="public\showcase.gif">
 
 ## !Important (Read before forking)
 

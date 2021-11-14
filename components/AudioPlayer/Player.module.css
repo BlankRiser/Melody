@@ -1,0 +1,93 @@
+/* .progressBar{
+    outline: none;
+
+}
+
+.rangeSlider  {
+
+-webkit-appearance:none;
+  width:300px;
+  height:40px;
+  border-radius:5rem;
+  background:red;
+  outline:none;
+  overflow:hidden;
+
+  
+}
+
+.rangeSlider::-webkit-slider-runnable-track {
+    height: 40px;
+    -webkit-appearance: none;
+    color: #444;
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+.rangeSlider::-webkit-slider-thumb{
+-webkit-appearance:none;
+  width:10px;
+  height:10px;
+  background:#aaa;
+  border-radius:5rem;
+  box-shadow:-350px 0px 0px 340px #aaa;
+  cursor:pointer;
+}
+
+.rangeSlider:active::-webkit-slider-thumb {
+    background: #fff;
+    box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 3px #1597ff;
+  } */
+
+.rangeSlider {
+  outline: 0;
+  border: 0;
+  border-radius: 500px;
+  width: 400px;
+  max-width: 100%;
+  margin: 24px 0 16px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+   .rangeSlider {
+    overflow: hidden;
+    height: 40px;
+    -webkit-appearance: none;
+    background-color: #ddd;
+  }
+   .rangeSlider::-webkit-slider-runnable-track {
+    height: 40px;
+    -webkit-appearance: none;
+    color: #444;
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+   .rangeSlider::-webkit-slider-thumb {
+    width: 40px;
+    -webkit-appearance: none;
+    height: 40px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 40px #1597ff;
+    border-radius: 50%;
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    position: relative;
+  }
+   .rangeSlider:active::-webkit-slider-thumb {
+    background: #fff;
+    box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 3px #1597ff;
+  }
+}
+ .rangeSlider::-moz-range-progress {
+  background-color: #43e5f7;
+}
+ .rangeSlider::-moz-range-track {
+  background-color: #9a905d;
+}
+ .rangeSlider::-ms-fill-lower {
+  background-color: #43e5f7;
+}
+.rangeSlider::-ms-fill-upper {
+  background-color: #9a905d;
+}

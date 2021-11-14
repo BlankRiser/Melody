@@ -1,29 +1,57 @@
-# Next.js + Tailwind CSS Example
+# Melody
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Search music from JioSaavn.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+<img src="public\video\showcase.gif">
 
-## Preview
+## !Important (Read before forking)
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+This project is built using [Unofical JioSaavnAPI API](https://github.com/cyberboysumanjay/JioSaavnAPI) that possibly violates the Terms and Condition of JioSaavn.
+This project was only built for learning purposes and nothing else.
+If you do fork this project, please make sure you read the music license of JioSaavn.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+(This project may not work if the underlying API is down.)
 
-## Deploy your own
+### How to use
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+1. Install npm and python dependencies.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+```shell
+npm Install
+cd data/api
+pip install -r requirements.txt
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+2. Run [app.py](data\api\app.py) located in the `root\data\api` directory of this project to start the api server.
+3. Start nextjs server.
+
+### Features to come
+
+- [ ] Audio Player
+- [ ] Embed meta data before music downloads ( album art, album, artist, etc)
+- [ ] Download all the music from playlist
+- [ ] UI Enhancements
+
+### UseFul Resources
+
+- [Custom Audio Player in React](https://www.youtube.com/watch?v=sqpg1qzJCGQ&ab_channel=SelfTeachMe) : [Repo](https://github.com/ahaywood/compressedfm/blob/master/nextjs/src/modules/shared/components/AudioPlayer/WaveformPlayer.js#L48)
+- Sidebar : [Repo](https://github.com/JacobParis/sliding-sidebar)
+- Range Slider :[Codepen](https://codepen.io/brandonmcconnell/pen/oJBVQW?editors=1100)
+- [Animations](https://github.com/saviomartin/codehouse)
+
+### UI Inspirations
+
+- [Responsive Social Media Website ](https://github.com/egattor/responsive-social-media-with-theme-customization)
+- [Sidebar](https://play.tailwindcss.com/qXPOMc0BBl)
+- [Flowbite](https://flowbite.com/)
+
+### Built using
+
+- NextJs
+- TailwindCss
+- [Unofical JioSaavnAPI](https://github.com/cyberboysumanjay/JioSaavnAPI)
+
+### Credits
+
+- [Public APIs](https://github.com/public-apis/public-apis)
+- [Unofficial JioSaavnAPI](https://github.com/cyberboysumanjay/JioSaavnAPI)

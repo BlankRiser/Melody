@@ -1,7 +1,14 @@
-import 'tailwindcss/tailwind.css'
+import LayoutWrapper from "layouts/LayoutWrapper";
+import "styles/global.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <LayoutWrapper>
+        <Component {...pageProps} />
+      </LayoutWrapper>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
